@@ -1,0 +1,21 @@
+.contenido{
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+.titulo{
+    margin: 10px 0px;
+    font-family: 'roschild', sans-serif;
+}
+.subtitulo{
+    margin: 10px 20px;
+    font-family: "minion", sans-serif;
+}
+.item{
+    margin: 20px;
+}
+label{
+    font-family: 'roschild',sans-serif;
+}
+.buttonEnviar{
+    margin-top: 10px;
+}

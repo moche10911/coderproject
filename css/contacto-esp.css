@@ -1,0 +1,33 @@
+.sec{
+    padding: 30px;
+    display: grid;
+    justify-items: center;
+}
+.sleft .tituloDePagina{
+    font-family: 'roschild',sans-serif;
+    text-align: center;
+}
+.sleft .imagen{
+    padding: 20px;
+    width: 100%;
+    border-radius: 100%;
+}
+.sright{
+    text-align: center;
+}
+.sright .item{
+    padding-bottom: 1rem;
+}
+.sright label{
+    font-family: 'roschild';
+}
+
+@media only screen and (min-width:1023px){
+    .sec{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .sright{
+        align-self: center;
+    }
+}
