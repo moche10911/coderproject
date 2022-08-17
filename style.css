@@ -33,6 +33,12 @@ nav{
 nav a{
     text-align: center;
     font-family: 'roschild', sans-serif;
+    font-weight: 1000;
+    font-size: 18px;
+}
+nav a:hover{
+    animation: pulse;
+    animation-duration: 2s;
 }
 footer{
     background-color: #EDDBC4;
