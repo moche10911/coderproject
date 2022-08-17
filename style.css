@@ -33,10 +33,6 @@ nav{
 nav a{
     text-align: center;
     font-family: 'roschild', sans-serif;
-    transition: 2s;
-}
-nav a:hover{
-    transform: scale(1.2)
 }
 footer{
     background-color: #EDDBC4;
