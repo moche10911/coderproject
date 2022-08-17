@@ -16,7 +16,13 @@ section h2{
 }
 .catalogo .item{
     border: 1.5px solid black;
+    background-color: white;
     height: 350px;
+    transition-duration: 1.3s;
+}
+
+.catalogo .item:hover{
+    transform: scale(1.05);
 }
 .catalogo img{
     width: 100%;
