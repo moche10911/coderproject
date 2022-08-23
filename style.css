@@ -17,7 +17,6 @@ a{
 }
 ul{
     list-style: none;
-    width: 100%;
 }
 nav{
     display: grid;
@@ -55,6 +54,7 @@ footer{
 }
 footer h4{
     text-transform: uppercase;
+    font-family: 'minion';
 }
 iframe{
     border: 1px solid black;
