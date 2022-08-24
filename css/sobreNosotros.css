@@ -14,8 +14,10 @@
     display: grid;
 }
 .imagen .imagenTexto{
+    font-family: 'roschild', sans-serif;
     color: white;
     text-shadow: 1px 1px 1px black;
+    font-weight: bolder;
 }
 .info{
     padding: 20px;

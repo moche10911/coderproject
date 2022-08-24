@@ -8,9 +8,12 @@
     text-align: center;
 }
 .sleft .imagen{
-    padding: 20px;
+    margin: 20px;
     width: 100%;
     border-radius: 100%;
+}
+.sombra{
+    text-shadow: 2px 5px 30px black;
 }
 .sright{
     text-align: center;
