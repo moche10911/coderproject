@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'roschild';
+    src: url(./assets/fonts/roschild-font/Roschild-owAjB.ttf);
+}
+@font-face {
+    font-family:'minion' ;
+    src: url(./assets/fonts/minion-font-2/Minion-Regular.otf);
+}
+
+$cent: center;
+$fontPrin: 'roschild';
+$fontSec: 'minion';
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    width: 100%;
+    background-color: #EDDBC4;
+    justify-items: $cent;
+    align-items: $cent;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+    a{
+        text-align: $cent;
+        font-family: $fontPrin, sans-serif;
+        font-weight: 1000;
+        font-size: 18px;
+    }
+    a:hover{
+        animation: pulse;
+        animation-duration: 2s;
+    }
+}
+footer{
+    background-color: #EDDBC4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 1fr 1fr 1fr 2fr;
+    padding: 20px;
+    grid-gap: 10px;
+    text-align: $cent;
+    width: 100%;
+    align-items: $cent;
+    justify-items: $cent;
+    border-top: 1px solid black;
+    h4{
+        text-transform: uppercase;
+        font-family: $fontSec;
+    }
+    iframe{
+        border: 1px solid black;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+@media only screen and (min-width:600px){
+    footer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width:1023px){
+    footer{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+}

@@ -1,75 +1,82 @@
 @font-face {
-    font-family: 'roschild';
-    src: url(./assets/fonts/roschild-font/Roschild-owAjB.ttf);
+  font-family: "roschild";
+  src: url(./assets/fonts/roschild-font/Roschild-owAjB.ttf);
 }
 @font-face {
-    font-family:'minion' ;
-    src: url(./assets/fonts/minion-font-2/Minion-Regular.otf);
+  font-family: "minion";
+  src: url(./assets/fonts/minion-font-2/Minion-Regular.otf);
 }
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-    color: black;
+
+a {
+  text-decoration: none;
+  color: black;
 }
-ul{
-    list-style: none;
+
+ul {
+  list-style: none;
 }
-nav{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 20px;
-    width: 100%;
-    background-color: #EDDBC4;
-    justify-items: center;
-    align-items: center;
-    border-bottom: 1px solid black;
-    font-size: 1rem;
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  width: 100%;
+  background-color: #EDDBC4;
+  justify-items: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-size: 1rem;
 }
-nav a{
-    text-align: center;
-    font-family: 'roschild', sans-serif;
-    font-weight: 1000;
-    font-size: 18px;
+nav a {
+  text-align: center;
+  font-family: "roschild", sans-serif;
+  font-weight: 1000;
+  font-size: 18px;
 }
-nav a:hover{
-    animation: pulse;
-    animation-duration: 2s;
+nav a:hover {
+  animation: pulse;
+  animation-duration: 2s;
 }
-footer{
-    background-color: #EDDBC4;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat 1fr 1fr 1fr 2fr;
-    padding: 20px;
-    grid-gap: 10px;
-    text-align: center;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-    border-top: 1px solid black;
+
+footer {
+  background-color: #EDDBC4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat 1fr 1fr 1fr 2fr;
+  padding: 20px;
+  grid-gap: 10px;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  border-top: 1px solid black;
 }
-footer h4{
-    text-transform: uppercase;
-    font-family: 'minion';
+footer h4 {
+  text-transform: uppercase;
+  font-family: "minion";
 }
-iframe{
-    border: 1px solid black;
-    width: 100%;
-    border-radius: 10px;
+footer iframe {
+  border: 1px solid black;
+  width: 100%;
+  border-radius: 10px;
 }
-@media only screen and (min-width:600px){
-    footer{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
+
+@media only screen and (min-width: 600px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
-@media only screen and (min-width:1023px){
-    footer{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-    }
+@media only screen and (min-width: 1023px) {
+  footer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
