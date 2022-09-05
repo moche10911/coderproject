@@ -10,6 +10,13 @@
 $cent: center;
 $fontPrin: 'roschild';
 $fontSec: 'minion';
+$color1: #EDDBC4;
+
+.fontPrincipal{
+    font-family: $fontPrin;
+    font-weight: 1000;
+    font-size: 18px;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -27,16 +34,14 @@ nav{
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
     width: 100%;
-    background-color: #EDDBC4;
+    background-color: $color1;
     justify-items: $cent;
     align-items: $cent;
     border-bottom: 1px solid black;
     font-size: 1rem;
     a{
         text-align: $cent;
-        font-family: $fontPrin, sans-serif;
-        font-weight: 1000;
-        font-size: 18px;
+        @extend .fontPrincipal;
     }
     a:hover{
         animation: pulse;

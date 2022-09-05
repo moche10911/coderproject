@@ -6,6 +6,12 @@
   font-family: "minion";
   src: url(./assets/fonts/minion-font-2/Minion-Regular.otf);
 }
+.fontPrincipal, nav a {
+  font-family: "roschild";
+  font-weight: 1000;
+  font-size: 18px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -34,9 +40,6 @@ nav {
 }
 nav a {
   text-align: center;
-  font-family: "roschild", sans-serif;
-  font-weight: 1000;
-  font-size: 18px;
 }
 nav a:hover {
   animation: pulse;
@@ -79,4 +82,4 @@ footer iframe {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
