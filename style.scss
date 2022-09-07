@@ -11,9 +11,19 @@ $cent: center;
 $fontPrin: 'roschild';
 $fontSec: 'minion';
 $color1: #EDDBC4;
+@mixin palet1{
+    background-color: $color1;
+    align-items: $cent;
+    justify-items: $cent;
+}
 
-.fontPrincipal{
-    font-family: $fontPrin;
+$fFam:(
+    'fontP':$fontSec,
+    'fontS':$fontSec
+);
+
+.fontPrincipalStyle{
+    font-family: map-get($map: $fFam, $key:'fontP' );
     font-weight: 1000;
     font-size: 18px;
 }
@@ -34,14 +44,12 @@ nav{
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
     width: 100%;
-    background-color: $color1;
-    justify-items: $cent;
-    align-items: $cent;
+    @include palet1;
     border-bottom: 1px solid black;
     font-size: 1rem;
     a{
         text-align: $cent;
-        @extend .fontPrincipal;
+        @extend .fontPrincipalStyle;
     }
     a:hover{
         animation: pulse;
@@ -49,7 +57,7 @@ nav{
     }
 }
 footer{
-    background-color: #EDDBC4;
+    @include palet1;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat 1fr 1fr 1fr 2fr;
@@ -57,8 +65,6 @@ footer{
     grid-gap: 10px;
     text-align: $cent;
     width: 100%;
-    align-items: $cent;
-    justify-items: $cent;
     border-top: 1px solid black;
     h4{
         text-transform: uppercase;
